@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>STREAM</title>
+    <link rel="icon" type="image/x-icon" href="slogo.webp">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="home">
+        <div class="headerbg">
+            <header>
+                <div class="container">
+                    <div class="navbar flex1">
+                        <div class="logo">
+                            <img src="p.png"> <img src="strmm.png">
+                        </div>
+                        <nav>
+                            <ul id="menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Movies</a></li>
+                                <li><a href="#">Tv Shows</a></li>
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Account</a></li>
+                            </ul>
+                        </nav>
+                        <span class="fa fa-bars" onclick="menutoggle()"> </span>
+                        <div class="subscribe flex">
+                            <i class="fas fa-search"></i>
+                            <i id="playbtn" class="fas fa-user"></i>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="home-content mtop">
+                <div class="container">
+                    <div class="left">
+                        <h2> THE DOLL </h2>
+                        <h1>NANCY STEPHENA </h1>
+
+                        <div class="time flex">
+                            <label>R</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1hrs 50mins</span>
+                            <i class="fas fa-circle"></i>
+                            <p>2021</p>
+                            <i class="fas fa-circle"></i>
+                            <button>Horrer</button>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt quod sequi deserunt
+                            laudantium officiis illo modi dolor dolorum eligendi? Eius iste dicta ea? Repellendus natus
+                            dolor molestias ex? Distinctio.</p>
+                        <div class="button-flex">
+                            <button class="btn">PLAY NOW</button>
+                            <i id="playbtn" class="fas fa-play"></i>
+                            <p>WATCH TRAILER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var menu = document.getElementById('menu');
+        menu.style.maxheight = "0px";
+
+        function menutoggle() {
+            if (menu.style.maxHeight == "0px") {
+                menu.style.maxHeight == "200px";
+            } else {
+                menu.style.maxHeight = "0px"
+            }
+        }
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle(sticky)
+            lassList.toggle("sticky", window.scrollY > 50)
+        })
+
+    </script>
+
+    <section class="popular mtop">
+        <div class="container">
+            <div class="heading flex1">
+                <h2>Most Popular</h2>
+                <button>MORE VIDEO</button>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m1.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Beauty & Beast</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Romance</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m2.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>The Dark Knight</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action/Crime</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m9.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>FLASH</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Fantasy/Action</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m4.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Annabella</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Horrer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m5.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>John Wick</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m6.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Venom</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action/sci-fic</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m7.webp">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>DUNE</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Sci-fic</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m8.avif">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>MUCK</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Horrer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular mtop">
+        <div class="container">
+            <div class="heading flex1">
+                <h2>Most viewed</h2>
+                <button>MORE VIDEO</button>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m7.webp">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>DUNE</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Fantasy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m5.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>John Wick</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action/Crime</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m8.avif">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>MUCK</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Horrer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m6.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Venom</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">sci-fic</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m2.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>The Dark Knight</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m4.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Annabella</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Horrer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m1.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Beauty and Beast</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Romance</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="m9.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>FLASH</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Fantasy/Action</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            dots: false,
+            nav: true,
+            responsive: {
+                411: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1000: {
+                    items: 4.5
+                }
+            }
+        })
+    </script>
+
+
+
+
+
+
+    <section class="new-release top">
+        <div class="container">
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="witcher.jpeg">
+                        </div>
+                        <div class="heading">
+                            <h2><span></span>NEW RELEASE</h2>
+                            <h1> THE WITCHER</h1>
+                        </div>
+
+
+
+                        <div class="time flex">
+                            <label>R</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1hrs 50mins</span>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="flex1"><img width="48" height="48"
+                                    src="https://img.icons8.com/color/48/imdb.png" alt="imdb" /></a>
+                            <i class="fas fa-circle"></i>
+                            <p>2021</p>
+                            <i class="fas fa-circle"></i>
+                            <button>Fantasy</button>
+                        </div>
+                        <P>Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.</P>
+                        <div class="button flex">
+                            <button type="button" name="button" class="btn">PLAY NOW</button>
+                            <i id="playbtn" class="fas fa-play"></i>
+                            <p>WATCH TRAILER</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="bb.jpg">
+                        </div>
+                        <div class="heading">
+                            <h2><span></span>NEW RELEASE</h2>
+                            <h1>Breaking Bad</h1>
+                        </div>
+
+
+
+                        <div class="time flex">
+                            <label>R</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1hrs 50mins</span>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="flex1"><img width="48" height="48"
+                                    src="https://img.icons8.com/color/48/imdb.png" alt="imdb" /></a>
+                            <i class="fas fa-circle"></i>
+                            <p>2021</p>
+                            <i class="fas fa-circle"></i>
+                            <button>Crime/Triller</button>
+                        </div>
+                        <P>A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student to secure his family's future.</P>
+                        <div class="button flex">
+                            <button type="button" name="button" class="btn">PLAY NOW</button>
+                            <i id="playbtn" class="fas fa-play"></i>
+                            <p>WATCH TRAILER</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="insp.jpg">
+                        </div>
+                        <div class="heading">
+                            <h2><span></span>NEW RELEASE</h2>
+                            <h1>INCEPTION</h1>
+                        </div>
+
+
+
+                        <div class="time flex">
+                            <label>R</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1hrs 50mins</span>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="flex1"><img width="48" height="48"
+                                    src="https://img.icons8.com/color/48/imdb.png" alt="imdb" /></a>
+                            <i class="fas fa-circle"></i>
+                            <p>2021</p>
+                            <i class="fas fa-circle"></i>
+                            <button>Sci-fic/Action</button>
+                        </div>
+                        <P>A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.</P>
+                        <div class="button flex">
+                            <button type="button" name="button" class="btn">PLAY NOW</button>
+                            <i id="playbtn" class="fas fa-play"></i>
+                            <p>WATCH TRAILER</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="doom.jpg">
+                        </div>
+                        <div class="heading">
+                            <h2><span></span>NEW RELEASE</h2>
+                            <h1>AVENGERS</h1>
+                            <h2>DOOMSDAY</h2>
+                        </div>
+
+
+
+                        <div class="time flex">
+                            <label>R</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1hrs 50mins</span>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="flex1"><img width="48" height="48"
+                                    src="https://img.icons8.com/color/48/imdb.png" alt="imdb" /></a>
+                            <i class="fas fa-circle"></i>
+                            <p>2021</p>
+                            <i class="fas fa-circle"></i>
+                            <button>Action/Adventure</button>
+                        </div>
+                        <P> Doomsday, also known as Avengers 5, is one of the most exciting upcoming Marvel movies that's on the way. It's been a long time since we saw Earth's Mightiest Heroes together on the big screen, and the good news is there's not long to wait for their return.</P>
+                        <div class="button flex">
+                            <button type="button" name="button" class="btn">PLAY NOW</button>
+                            <i id="playbtn" class="fas fa-play"></i>
+                            <p>WATCH TRAILER</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="g.jpg">
+                        </div>
+                        <div class="heading">
+                            <h2><span></span>NEW RELEASE</h2>
+                            <h1>VIKINGS</h1>
+                            
+                        </div>
+
+
+
+                        <div class="time flex">
+                            <label>R</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1hrs 50mins</span>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="flex1"><img width="48" height="48"
+                                    src="https://img.icons8.com/color/48/imdb.png" alt="imdb" /></a>
+                            <i class="fas fa-circle"></i>
+                            <p>2021</p>
+                            <i class="fas fa-circle"></i>
+                            <button>HISTORY</button>
+                        </div>
+                        <P>Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore--and raid--the distant shores across the ocean.</P>
+                        <div class="button flex">
+                            <button type="button" name="button" class="btn">PLAY NOW</button>
+                            <i id="playbtn" class="fas fa-play"></i>
+                            <p>WATCH TRAILER</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            dots: false,
+            nav: true,
+            items: 1,
+
+        })
+    </script>
+    <section class="popular mtop">
+        <div class="container">
+            <div class="heading flex1">
+                <h2>CRIME THRILLER</h2>
+                <button>MORE VIDEO</button>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="c1.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>DARK</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Crime/Triller</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="c2.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>STRANGER THINGS</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Triller/Crime</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="c3.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3> THE PERFECTION </h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Fantasy/Action</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="c4.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>EVIL DEAD RISE</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Horrer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="c5.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>CONJURING</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="c6.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>QUIT PLACE</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action/sci-fic</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="c7.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>WEDNESDAY</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Horrer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="c9.jpg">
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Carry on</h3>
+                            <div class="time flex">
+                                <span>1hr 50mins</span>
+                                <a href="#">Crime</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            dots: false,
+            nav: true,
+            responsive: {
+                411: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1000: {
+                    items: 4.5
+                }
+            }
+        })
+    </script>
+
+
+    <footer>
+        <div class="container top">
+            <div class="box">
+                <div class="logo">
+                    <img src="strmm.png">
+                </div>
+                <p> Quod eligendi temporibus nesciunt voluptate enim, eum esse sunt corporis repellendus quae voluptas
+                    sit provident recusandae illum beatae
+                    necessitatibus nostrum deleniti debitis.</p>
+
+                <div class="icon">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-youtube-square"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Explore</h2>
+
+                <div class="flex">
+                    <ul>
+                        <li>Home</li>
+                        <li>Tv Shows</li>
+                        <li>Actors</li>
+                        <li>Celebrity</li>
+                    </ul>
+
+                    <ul class="ul">
+                        <li>Movies</li>
+                        <li>Videos</li>
+                        <li>Basketball</li>
+                        <li>Coress</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Company</h2>
+
+                <div class="flex">
+                    <ul>
+                        <li>Company</li>
+                        <li>Terms of Use</li>
+                        <li>Contact Us</li>
+                        <li>Our Team</li>
+                    </ul>
+                    <ul class="ul">
+                        <li>Privacy Policy</li>
+                        <li>Helps Center</li>
+                        <li>Subscribe</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Download App</h2>
+                <p> Quod eligendi temporibus nesciunt voluptate enim, eum esse sunt corporis repellendus quae voluptas
+                    sit provident recusandae illum beatae
+                    necessitatibus nostrum deleniti debitis.</p>
+                <div class="img flex1">
+                    <img src="apple.png">
+                    <img src="googleplay.png">
+                </div>
+            </div>
+        </div>
+        <p class="legal">Copyright (c) 2025| Copyright Holder All Rights Reserved.This template is made by <i
+                class="fa fa-heart"></i>Shine Studio </p>
+    </footer>
+</body>
+
+</html>
